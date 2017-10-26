@@ -7,12 +7,15 @@
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="assets/font-awesome/css/font-awesome.css">
 	<link rel="stylesheet" href="assets/icomoon/style.css">
+	<!-- Favicon va aquí -->
 	<link rel="icon" type="image/png" href="assets/images/faviconit/favicon-16.png">
-	<script type="text/javascript" src="assets/app.js" async></script>
 </head>
 <body>
+	<!-- Div que contiene todo el sitio -->
 	<div id="container">
+		<!-- Div que contiene la imagen de fondo en la sección de arriba -->
 		<div id="image"></div>
+		<!-- Navbar -->
 		<nav>
 			<img src="assets/images/logo-white.png" alt="" id="logo">
 			<ul>
@@ -22,7 +25,7 @@
 				<li><a href="#">Log in</a></li>
 			</ul>
 		</nav>
-
+		<!-- La primera sección del sitio después de la barra de navegación -->
 		<header>
 			<div id="sign-up">
 				<div id="sign-up-content">
@@ -37,7 +40,7 @@
 				</div>
 			</div>
 		</header>
-
+		<!-- Segunda sección del sitio, la que contiene el degradado -->
 		<section id="gradient">
 			<div id="description">
 				<div class="gradient-text">
@@ -57,34 +60,36 @@
 			</div>
 			<img src="assets/images/phone.png" alt="" id="phone">
 		</section>
-
-		<section id="amplify">
-			<div id="amplify-text">
-				<h4 class="up">Watch</h4>
-				<h3 class="up">Amplify your ride</h3>
-				<p>Lyft's new emblem, Amp, is the secret to smooth pickups. Lighting up dashboards nationwide, the device makes it easy for passengers and drivers to find each other.</p>
+		
+		<!-- A partir de acá comienza la sección de vídeos -->
+		<div id="videos">
+			<section id="amplify">
+				<div class="intro-left">
+					<h4 class="up watch">Watch</h4>
+					<h3 class="up">Amplify your ride</h3>
+					<p>Lyft's new emblem, Amp, is the secret to smooth pickups. Lighting up dashboards nationwide, the device makes it easy for passengers and drivers to find each other.</p>
+				</div>
+				<iframe width="900" height="500" src="https://www.youtube.com/embed/fLSmUWOYpKw" id="first-video"></iframe>
+			</section>
+			
+			<div id="june">
+				<iframe width="900" height="500" src="https://www.youtube.com/embed/watch?v=V7j8Aqxmbs8" id="second-video"></iframe>
+				<div class="intro-right">
+					<h4 class="up watch">Watch</h4>
+					<h3 class="up">June</h3>
+					<p>In an animated short film by Academy Award-winner John Kahrs, a lonely widow in historic South Chicago is empowered to start sharing the ride —and sharing her life, too.</p>
+				</div>
 			</div>
-			<iframe width="900" height="500" src="https://www.youtube.com/embed/fLSmUWOYpKw" id="first-video"></iframe>
-		</section>
 
-		<div id="june">
-			<iframe width="900" height="500" src="https://www.youtube.com/embed/watch?v=V7j8Aqxmbs8" id="second-video"></iframe>
-			<div id="june-text">
-				<h4 class="up">Watch</h4>
-				<h3 class="up">June</h3>
-				<p>In an animated short film by Academy Award-winner John Kahrs, a lonely widow in historic South Chicago is empowered to start sharing the ride —and sharing her life, too.</p>
+			<div id="good-thing">
+				<iframe width="900" height="500" src="https://www.youtube.com/embed/watch?v=xj2VWLV0xCU" id="third-video"></iframe>
+				<div class="intro-left">
+					<h4 class="up watch">Watch</h4>
+					<h3 class="up">A good thing going</h3>
+					<p>Launching on TV and online, "Ride on the Bright Side" shows how Lyft continues to prioritize happy drivers, short ETAs, and safety.</p>
+				</div>
 			</div>
 		</div>
-
-		<div id="good-thing">
-			<iframe width="900" height="500" src="https://www.youtube.com/embed/watch?v=xj2VWLV0xCU" id="third-video"></iframe>
-			<div id="good-thing-text">
-				<h4 class="up">Watch</h4>
-				<h3 class="up">A good thing going</h3>
-				<p>Launching on TV and online, "Ride on the Bright Side" shows how Lyft continues to prioritize happy drivers, short ETAs, and safety.</p>
-			</div>
-		</div>
-
 		<footer>
 			<ul>
 				<li class="up">Log in</li>

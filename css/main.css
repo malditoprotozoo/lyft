@@ -211,9 +211,33 @@ que tiene el sitio original */
 	background-color: white;
 }
 
-#amplify-text {
+.watch {
+	font-size: 14px;
+	font-weight: 500;
+	line-height: 21px;
+}
+
+#videos h3 {
+	font-size: 28px;
+	line-height: 31px;
+	font-weight: 700;
+}
+
+#videos p {
+	font-size: 16px;
+	line-height: 24px;
+	font-weight: 300;
+}
+
+#videos iframe {
+	border: none;
+}
+
+.intro-left {
+	margin-left: 50px;
 	width: 25%;
 	float: left;
+	margin-top: 50px;
 }
 
 #first-video {
@@ -230,21 +254,17 @@ que tiene el sitio original */
 	float: left;
 }
 
-#june-text {
+.intro-right {
 	width: 25%;
 	float: right;
+	margin-right: 50px;
+	margin-top: 50px;
 }
 
 #good-thing {
 	width: 100%;
 	height: 500px;
-	padding-top: 1px;
 	background-color: white;
-}
-
-#good-thing-text {
-	width: 25%;
-	float: left;
 }
 
 #third-video {
@@ -256,7 +276,6 @@ footer {
 	height: 500px;
 	background-color: #333447;
 	color: white;
-	margin-top: 12px;
 }
 
 /* Al igual que con los headings, las listas traen margin
@@ -268,6 +287,7 @@ footer ul {
 	margin-top: 0;
 	padding-top: 0;
 	display: inline-block;
+	list-style-type: none;
 }
 
 .circle {
