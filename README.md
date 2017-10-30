@@ -6,87 +6,27 @@
 
 ***
 
-Para completar este reto, hemos creado este repositorio boilerplate (plantilla
-inicial) con todos los recursos que necesitas. Esto incluye imágenes y
-estructura de carpetas y archivos donde colocarás tu código.
-
-## Flujo de trabajo
-
-1. Debes realizar un [**fork**](https://gist.github.com/ivandevp/1de47ae69a5e139a6622d78c882e1f74)
-   de este repositorio.
-
-2. Luego deberás **clonar** tu fork en tu máquina. Recuerda que el comando a usar
-   es `git clone` y su estructura normalmente se ve así:
-
-   ```bash
-   git clone https://github.com/<nombre-de-usuario>/lyft.git
-   ```
-
-## Objetivo
-
-El reto consiste en replicar el sitio de **Lyft**, este será el resultado
-a lograr:
+En este reto se nos pidió replicar la maquetación del sitio de la empresa **Lyft**. Este debía ser el resultado final:
 
 ![Lyft Website](docs/fullpage.png)
 
-## Consideraciones
+## Flujo de trabajo
 
-* Encontrarás un archivo base `index.html` en el cual deberás escribir la
-  estructura de tu proyecto y enlazar tus archivos de estilos (CSS).
+Para cumplir con el objetivo partí por dividir el sitio en siete secciones, usando tanto etiquetas ``div`` como	los nuevos elementos semánticos de HTML5:
 
-* En la carpeta `css` tendrás un archivo base `main.css` donde agregarás los
-  estilos necesarios para tu proyecto:
+* ``#container``: Contenedor que abarca todo el sitio.
+* ``nav``: Barra de navegación.
+* ``header``: Gif animado con el logo de la empresa y un formulario de subscripción.
+* ``section #gradient``: La id fue elegida porque representa el color de fondo de este espacio. Acá se describe el servicio que entrega la empresa.
+* ``#videos``: Como el nombre lo indica, creé un contenedor que abarca todos los vídeos que se presentan en el sitio.
+* ``footer``: Parte inferior de la estructura web.
 
-* Dentro de la carpeta `assets` se encuentra la carpeta `images` donde
-  encontrarás todas las imágenes necesarias para completar tu proyecto.
+###Desafíos
 
-* Deberás **actualizar el archivo `README.md`** explicando el contenido de tu
-  repositorio.
+* **Degradado:** El sitio original de Lyft tiene una transición sútil de colores que no conseguía lograr sólo con el color degradado. Para suavizar la transición, le añadí una sombra al ``header`` con el mismo color del inicio del degradado (``#6b1e85``) y le fui agrandando el tamaño hasta que consideré que quedaba lo suficientemente parecido.
 
-* Esta web utiliza la tipografía `Montserrat`.
+* **Vídeos:** Para insertar los vídeos usé la etiqueta recomendada ``iframe``. Esta etiqueta de tipo *inline* se usa para insertar un documento dentro del sitio. En este caso, usé los enlaces especiales de YouTube que permiten que el vídeo se reproduzca en el sitio que uno está creando y no sólo un enlace hacía Youtube. Para que en esta sección los vídeos quedaran en un lado y el texto en otro usé la propiedad ``float``.
 
-* La paleta de colores puedes obtenerla inspeccionado el sitio original, pero
-  para ganar tiempo, puedes usar los siguientes:
+### Resolución de Pantalla
 
-  - Botones, hover: `#FF00BF`
-  - Fondo de `footer`: `#333447`
-  - Título del formulario: `#352384`
-  - Texto del formulario: `#728099`
-  - Gradiente morado: `linear-gradient(#76278F, #2B1E66);`
-
-* Para el footer, deberás tomar en cuenta que tiene un hover y se ve como en la
-  siguiente imagen:
-
-  ![Lyft - Footer](docs/footer.gif)
-
-  Además, los íconos deberás obtenerlo de `Icomoon`.
-
-* Para este reto, encontrarás ciertas cosas que probablemente aun no has visto
-  en clase (formularios, videos de Youtube). No te preocupes, estamos seguros
-  que los afrontarás con éxito, de igual forma aquí unos tips:
-
-  - Estos son los videos de Youtube:
-    * https://www.youtube.com/watch?v=fLSmUWOYpKw
-    * https://www.youtube.com/watch?v=V7j8Aqxmbs8
-    * https://www.youtube.com/watch?v=xj2VWLV0xCU
-  - Para agregar los videos, averigua sobre la etiqueta `iframe`.
-  - Para el formulario, revisa las etiquetas como `form` e `input`.
-
-* Puedes ver el [sitio original](https://www.lyft.com/), sin embargo, su diseño
-  ya ha cambiado en ciertas partes, así que tu fuente de verdad es la imagen que
-  muestra el objetivo de este reto.
-
-  > Nota: El sitio original tiene ciertos efectos y funcionalidades que
-están fuera del alcance de este reto. Enfócate en obtener la maquetación
-lo más parecido posible, usando lo aprendido en clase ;)
-
-## A tener en cuenta
-
-Este reto será evaluado sobre lo siguiente:
-
-* Pixel perfect (replicar el diseño con exactitud)
-* Estructura de carpetas y archivos
-* Nombramiento de clases, id, etc
-* Indentación
-* Archivo `README.md` actualizado y correctamente redactado
-* Uso de comentarios para hacer tu código más legible
+Template realizado en una laptop con resolución de pantalla **1366 x 768 (16:9).**
